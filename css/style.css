@@ -187,6 +187,12 @@ body {
         padding: 0 .65rem;
     }
 
+    .portfolio-section {
+        width: 100%;
+    }
 
-
+    .project-card {
+        width: 47%;
+        display: inline-block;
+    }
 }
