@@ -1,20 +1,80 @@
 body {
-    background-color: #ededed;
+    background-color: #f4f4f4;
+    color: #2b2a2a;
 }
 
-@media (max-width: 320px) {
+/* GLOBAL STYLES */
+
     h1 {
-        display: block;
-        text-align: center;
         font-family: "Raleway", sans-serif;
+        font-weight: 700;
+    }
+
+    #menu, li {
+        font-family: "Roboto", sans-serif;
+        text-transform: uppercase;
+    }
+
+    a {
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    a:visited {
+        color: #2b2a2a;;
+    }
+
+    a:hover {
+        color: #254e5a;
         font-weight: bold;
-        width: 100%
+    }
+
+    p {
+        font-family: "Roboto", sans-serif;
+        color: #586069;
+    }
+
+    h3 {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-family: "Raleway", sans-serif;
+    }
+
+    .portfolio-section {
+        background-color: white;
+    }
+
+    .skill {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        color:#586069;
+        text-transform: uppercase;
+    }
+
+    h5 {
+        font-family: "Raleway", sans-serif;
+        text-transform: 700;
+    }
+
+
+/* MEDIA QUERIES*/
+
+@media (min-width: 320px) {
+    .header {
+        margin-top: 25px;
+    }
+    
+    h1 {
+        text-align: center;
+        width: 100%;
+        margin-top: 0em;
     }
 
     #menu, li {
         text-align: center;
-        font-family: "Roboto", sans-serif;
-        text-transform: uppercase;
     }
 
     li {
@@ -23,22 +83,23 @@ body {
         padding: 10px;
     }
 
+    #profile-pic {
+        max-width: 250px;
+        margin: 0 25px;
+    }
+
     img {
         max-width: 300px;
         padding: 0 10px;
     }
 
     p {
-        font-family: "Roboto", sans-serif;
         padding: 0px 10px 10px 10px;
         text-align: center;
-        color: #586069;
         padding-bottom: 20px;
     }
 
     h3 {
-        font-family: "Raleway", sans-serif;
-        font-weight: bolder;
         text-align: center;
         text-transform: uppercase;
         padding: 10px 0;
@@ -46,13 +107,11 @@ body {
     }
 
     h4 {
-        font-family: "Raleway", sans-serif;
         text-align: center;
         font-size: 1.4rem;
     }
 
     .portfolio-section {
-        background-color: white;
         padding: 30px 0;
     }
 
@@ -62,12 +121,8 @@ body {
 
     .skill {
         display: block;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
         text-align: center;
-        text-transform: uppercase;
         padding: 10px 0;
-        color:#586069;
     }
 
     strong {
@@ -78,12 +133,9 @@ body {
     footer {
         border-top: 1px solid #586069;
         margin: 10px;
-        clear: both;
     }
 
     h5 {
-        font-family: "Raleway", sans-serif;
-        text-transform: bold;
         padding: 10px;
     }
 
@@ -98,6 +150,14 @@ body {
     .footer-menu {
         display: none;
     }
-        
-    
+
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    } 
+}
+
+@media (min-width: 768px) {
+ 
 }
