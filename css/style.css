@@ -19,6 +19,7 @@ body {
         text-align: center;
         width: 100%;
         margin-top: 0em;
+        color: #254e5a;
     }
 
     .main-nav li {
@@ -47,7 +48,7 @@ body {
         font-weight: bold;
     }
 
-    #profile-pic {
+    .profile-pic {
         display: block;
         max-width: 80%;
         margin: 0 auto;
@@ -134,7 +135,7 @@ body {
     }
 
     .clearfix::after {
-        content: "";
+        content: " ";
         clear: both;
         display: table;
     }
@@ -142,7 +143,50 @@ body {
 /* Media Queries */
 
 @media (min-width: 768px) {
-    .container {
-        width: 90%;
+    
+    .header {
+        width: 100%;
     }
+
+    .main-nav {
+        text-align:center;
+    }
+
+    .main-nav li {
+        display: inline;
+        background: none;
+    }
+
+    .main-nav a {
+        display: inline-block;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .profile-pic {
+        float: right;
+        width: 40%;
+        margin-top: 0rem;
+    }
+
+    .clearfix {
+        overflow: auto;
+    }
+
+    .about-blurb {
+        margin-top: 0rem;
+        font-size: 1.15rem;
+        text-align: left;
+    }
+
+    .section-one {
+        margin: 1.875rem 0;
+        padding: 0 .65rem;
+    }
+
+
+
 }
