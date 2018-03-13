@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
 </head>
 <body>
 
@@ -15,8 +16,9 @@
         <nav class="menu">
                 <ul>
                   <li><a href="#home">Home</a></li>
-                  <li><a href="#">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="#portfolio">Portfolio</a></li>
+                  <li><a href="#skills">Skills</a></li>
+                  <li><a href="#contact">Contact</a></li>
                 </ul>
               </nav>
     </header>
@@ -28,7 +30,7 @@
             <p class="about-blurb">Hi! I'm a front-end developer who loves responsive design and CSS. I recently finished learning front-end web development at Treehouse and I am excited to put my skills to use!</p>
         </div>
 
-        <div class="portfolio-section">
+        <div id = "portfolio" class="portfolio-section">
             <h3>Portfolio</h3>
             <div class="project-card">
                 <img src="images/portfolio-1.png" alt="marketing page image">
@@ -62,7 +64,17 @@
             </div>
         </div>
 
-        <div class="contact-section">
+        <div id="skills" class="skills-section">
+            <h3>Skills</h3>
+            <img src="images/responsive.png" alt="responsive development">
+            <div class="skills-group">
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">Javascript</span>
+                <span class="skill">Front-End Development</span>
+            </div>
+        </div>
+
+        <div id="contact" class="contact-section">
             <h3>Contact</h3>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
             <p>Phone <strong>+1(111)555-1234</strong></p>
@@ -71,12 +83,13 @@
 
         <div class="footer-section">
             <footer>
-                <h5>Colin Stell</h5>
-                <h5 class="top-mobile">Back to Top</h5>
+                <h5 class="footer-name">Colin Stell</h5>
+                <h5 class="top-mobile"><a href="#home">Back to Top</a></h5>
                 <nav class="footer-menu">
                         <ul>
                           <li><a href="#home">Home</a></li>
                           <li><a href="#">Portfolio</a></li>
+                          <li><a href="#">Skills</a></li>
                           <li><a href="#">Contact</a></li>
                         </ul>
                       </nav>
