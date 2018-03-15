@@ -36,7 +36,7 @@ body {
         padding: 0.625rem;
     }
 
-    a {
+    a:link {
         text-decoration: none;
         font-weight: 600;
     }
@@ -48,6 +48,11 @@ body {
     a:hover {
         color: #254e5a;
         font-weight: bold;
+        font-size: 1.2rem;
+    }
+
+    a:active {
+        color: #254e5a; 
     }
 
     .profile-pic {
@@ -55,6 +60,9 @@ body {
         max-width: 80%;
         margin: 0 auto;
         margin-top: 1.5625rem;
+        padding: 0;
+        border: 3px solid #254e5a;
+        border-radius: 2%;
     }
 
     img {
@@ -107,7 +115,7 @@ body {
 
     h5 {
         font-family: "Raleway", sans-serif;
-        text-transform: 700;
+        font-weight: 700;
     }
 
     strong {
@@ -118,11 +126,14 @@ body {
     footer {
         border-top: 1px solid #586069;
         margin: 0.625rem;
+        background-color: #b3b4b4;
+        margin: 1%;
     }
 
     h5 {
         padding: 0.625rem;
         padding-left: 1rem;
+        color:#254e5a;
     }
 
     .footer-name {
@@ -222,7 +233,7 @@ body {
     }
 
     .contact-blurb {
-        margin: 0 3rem;
+        margin: 0 15%;
     }
 
     .contact-section p {
@@ -245,5 +256,63 @@ body {
         text-transform: uppercase;
         text-align: center;
         font-size: 0.83em;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .container {
+        max-width: 1024px;
+    }
+
+    h1 {
+        float: left;
+        text-align: left;
+        display: inline;
+        width: 30%;
+    }
+
+    .header .container {
+        overflow: auto;
+        padding: 0 4%;
+    }
+
+    .main-nav {
+        float: right;
+        display: inline;
+    }
+    
+    .section-one {
+        padding: 0 4%;
+    }
+
+    .profile-pic {
+        margin-left: 1.65rem;
+    }
+
+    .project-card {
+        width: 32%;
+    }
+
+    .skills-img {
+        width: 50%;
+        float: left;
+        padding-left: 10%;
+    }
+
+    .skills-section {
+        overflow: hidden;
+    }
+
+    .skills-group {
+        float: right;
+        display: inline;
+        padding: 0 10%;
+        padding-bottom: 5%;
+        margin-top: 0;
+    }
+
+    .skill {
+        margin-top: 1.2rem;
     }
 }
