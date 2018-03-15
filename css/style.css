@@ -6,6 +6,8 @@ body {
     background-color: #f4f4f4;
     color: #3a3939;
     line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    color: #586069;
 }
 
 /* GLOBAL STYLES */
@@ -36,7 +38,7 @@ body {
 
     a {
         text-decoration: none;
-        font-weight: 500;
+        font-weight: 600;
     }
 
     a:visited {
@@ -120,6 +122,7 @@ body {
 
     h5 {
         padding: 0.625rem;
+        padding-left: 1rem;
     }
 
     .footer-name {
@@ -189,10 +192,58 @@ body {
 
     .portfolio-section {
         width: 100%;
+        padding-top: .15rem;
     }
 
     .project-card {
         width: 47%;
         display: inline-block;
+    }
+
+    .projects {
+        padding-left: 2.25rem;
+    }
+
+    .skills-img {
+        width: 70%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .skill {
+        font-size: 1.25rem;
+        margin-top: 2.25rem;
+        color: #254e5a;
+    }
+
+    .contact-section {
+        border-top: 1px solid black;
+        margin: 0.625rem;
+    }
+
+    .contact-blurb {
+        margin: 0 3rem;
+    }
+
+    .contact-section p {
+        font-size: 1.2rem;
+    }
+
+    .top-mobile {
+        display:none;
+    }
+
+    .footer-menu {
+        display: inline-block;
+        float: right;
+        padding: 0.625rem;
+    }
+
+    .footer-menu li {
+        display: inline;
+        background: none;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 0.83em;
     }
 }
